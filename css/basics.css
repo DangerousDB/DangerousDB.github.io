@@ -1,6 +1,6 @@
 :root {
-  --bg-color: rgb(15.923% 4.9449% 25.135%);
-  --main-color: rgb(1.7407% 79.505% 96.895%);
+  --bg-color: rgb(41, 13, 64);
+  --main-color: rgb(4, 203, 247);
 }
 
 html {
@@ -56,22 +56,32 @@ canvas {
   border: 2px solid var(--main-color);
   background: var(--bg-color);
   color: var(--main-color);
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow-clip-margin: content-box;
+  overflow: hidden;
 }
 
 canvas:hover {
-  --main-color: rgb(15.923% 4.9449% 25.135%);
-  --bg-color: rgb(1.7407% 79.505% 96.895%);
+  --main-color: rgb(41, 13, 64);
+  --bg-color: rgb(4, 203, 247);
   border: 2px solid var(--main-color);
   background: var(--bg-color);
   color: var(--main-color);
+  /* width: 30%; */
+  /* height: 30%; */
 }
 
 canvas:not(:hover) {
-  --bg-color: rgb(15.923% 4.9449% 25.135%);
-  --main-color: rgb(1.7407% 79.505% 96.895%);
+  --bg-color: rgb(41, 13, 64);
+  --main-color: rgb(4, 203, 247);
   border: 2px solid var(--main-color);
   background: var(--bg-color);
   color: var(--main-color);
+  /* width: 30%; */
+  /* height: 30%; */
 }
 
 /* General Classes */
@@ -79,15 +89,17 @@ canvas:not(:hover) {
 .column {
   display: flex;
   flex-direction: column;
-  margin: 10px;
-  padding: 10px;
+  /* margin: 10px; */
+  /* padding: 10px; */
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  margin: 10px;
-  padding: 10px;
+  align-items: center;
+
+  /* margin: 10px; */
+  /* padding: 10px; */
 }
 
 .row > * {
